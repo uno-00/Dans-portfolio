@@ -10,9 +10,9 @@ export default function HeroSection() {
           alt="Financial advisor office"
           width={1920}
           height={1080}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[50%_55%]"
         />
-        <div className="absolute inset-0 bg-navy-dark/75" />
+        <div className="absolute inset-0 bg-navy-dark/65" />
       </div>
 
       <div className="relative container mx-auto px-4 lg:px-8 py-32">

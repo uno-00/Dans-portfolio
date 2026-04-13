@@ -29,7 +29,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8">
         <a href="#" className="font-heading text-xl font-bold tracking-tight text-primary">
-          Sterling<span className="text-accent">.</span>Finance
+          Danina Roselle Matulac
         </a>
 
         {/* Desktop */}

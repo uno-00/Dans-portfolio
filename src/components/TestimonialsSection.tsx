@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: "Sarah Mitchell",
     role: "Business Owner",
-    text: "Sterling Finance transformed our retirement strategy. Their personalized approach gave us confidence we never had before.",
+    text: "Danina's team transformed our retirement strategy. Their personalized approach gave us confidence we never had before.",
   },
   {
     name: "James & Linda Park",

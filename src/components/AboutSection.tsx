@@ -1,4 +1,7 @@
 import advisorPhoto from "@/assets/advisor-photo.png";
+import advisorStoryPhoto from "@/assets/advisor-story.png";
+import heroBgPhoto from "@/assets/hero-bg.jpg";
+import servicesTrustedPhoto from "@/assets/services-trusted.png";
 
 const milestones = [
   { year: "Oct 2020", event: "Licensed Financial Advisor" },
@@ -15,6 +18,74 @@ const milestones = [
   { year: "Nov 2025", event: "National Achievers Club" },
 ];
 
+const serviceSpecialties = [
+  "Single Professionals Wealth Portfolio",
+  "Business Continuity Plans",
+  "Newly Married MRI House Loan",
+  "Retention program for Employees",
+  "OFW Retirement Plans",
+  "Child's Education Fund and Savings",
+  "Breadwinner Protection System",
+  "Hospitalization Benefits for All",
+  "Financial Seminars for Employees",
+  "Insurance Policy Review",
+  "Investment Builder Plans",
+  "Critical Illness Insurance",
+  "Senior Citizen Insurance",
+  "Estate Planning for Property Owners",
+];
+
+const consultantGallery = [
+  {
+    src: advisorStoryPhoto,
+    alt: "Danina featured highlight",
+    className: "col-span-2 row-span-2",
+    imageClass: "object-top",
+  },
+  {
+    src: advisorPhoto,
+    alt: "Danina portrait",
+    className: "",
+    imageClass: "object-center",
+  },
+  {
+    src: servicesTrustedPhoto,
+    alt: "Client planning session",
+    className: "",
+    imageClass: "object-center",
+  },
+  {
+    src: heroBgPhoto,
+    alt: "Financial consultation setup",
+    className: "",
+    imageClass: "object-center",
+  },
+  {
+    src: advisorPhoto,
+    alt: "Danina professional profile",
+    className: "col-span-2 sm:col-span-1",
+    imageClass: "object-top",
+  },
+  {
+    src: servicesTrustedPhoto,
+    alt: "Client advisory support",
+    className: "",
+    imageClass: "object-center",
+  },
+  {
+    src: advisorStoryPhoto,
+    alt: "Danina seminar moment",
+    className: "",
+    imageClass: "object-left",
+  },
+  {
+    src: heroBgPhoto,
+    alt: "Advisor desk visual",
+    className: "sm:col-span-2",
+    imageClass: "object-center",
+  },
+];
+
 export default function AboutSection() {
   return (
     <section id="about" className="py-24 lg:py-32 bg-secondary/50">
@@ -22,43 +93,117 @@ export default function AboutSection() {
         {/* About intro */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
           <div className="fade-up relative group">
-            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl border border-border/60 w-full max-w-[520px] mx-auto">
               <img
                 src={advisorPhoto}
                 alt="Financial Advisor"
-                className="w-full max-w-md mx-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                className="block w-full h-[360px] sm:h-[420px] object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             {/* Decorative frame */}
-            <div className="absolute -bottom-4 -right-4 w-full max-w-md mx-auto h-full rounded-2xl border-2 border-accent/30 z-0 transition-all duration-500 group-hover:-bottom-5 group-hover:-right-5" />
+            <div className="absolute -bottom-2 -right-2 w-full max-w-[520px] mx-auto h-full rounded-2xl border-2 border-accent/30 z-0 transition-all duration-500 group-hover:-bottom-3 group-hover:-right-3" />
           </div>
 
           <div className="space-y-6 fade-up">
-            <p className="text-accent font-medium tracking-widest text-sm uppercase">
-              About Me
-            </p>
+            <p className="text-accent font-medium tracking-widest text-sm uppercase">About</p>
             <h2 className="font-heading text-3xl lg:text-5xl font-bold text-foreground leading-tight">
-              Your Trusted Partner in Building Wealth
+              Danina Roselle Matulac
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              With a passion for financial empowerment and years of dedicated service,
-              I help individuals and families secure their future through personalized
-              financial planning, investment strategies, and comprehensive protection plans.
+              I am Danina, a Filipino Certified Wealth Planner based in Manila, Philippines,
+              dedicated to helping individuals and families achieve financial clarity and long-term
+              stability. I specialize in providing tailored financial solutions for single
+              professionals, young families, business owners, and estate owners, guiding them in
+              making informed financial decisions that align with their goals and life stages.
             </p>
-            <div className="flex items-center gap-6 pt-4">
-              <div className="text-center">
+            <p className="text-muted-foreground leading-relaxed text-lg">
+              With a strong commitment to financial education and planning, I empower my clients to
+              build, protect, and grow their wealth through strategic and personalized approaches. I
+              simplify complex financial matters and provide clear direction so my clients can
+              confidently secure their present needs while preparing for a financially stable
+              future.
+            </p>
+          </div>
+        </div>
+
+        {/* Financial consultant story */}
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-24">
+          <div className="fade-up grid grid-cols-2 sm:grid-cols-3 gap-3 lg:gap-4 auto-rows-[100px] sm:auto-rows-[120px]">
+            {consultantGallery.map((photo) => (
+              <div
+                key={`${photo.alt}-${photo.src}`}
+                className={`${photo.className} rounded-xl overflow-hidden border border-border/60 shadow-sm bg-card`}
+              >
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  className={`w-full h-full object-cover ${photo.imageClass} transition-transform duration-500 hover:scale-[1.03]`}
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="fade-up space-y-6">
+            <h3 className="font-heading text-3xl lg:text-5xl font-semibold text-primary leading-tight">
+              As a Financial Consultant,
+            </h3>
+            <p className="text-muted-foreground leading-relaxed text-xl">
+              My mission is to help Filipinos take control of their financial lives by providing
+              practical, well-structured, and personalized financial planning solutions. I believe
+              that financial awareness and proper guidance play a vital role in making informed
+              decisions that lead to lasting security and independence.
+            </p>
+            <p className="text-muted-foreground leading-relaxed text-xl">
+              Through a client-focused approach, I work closely with individuals and families to
+              strengthen their financial foundation, manage risks effectively, and create
+              strategies that support both present needs and future aspirations.
+            </p>
+            <div className="flex flex-wrap items-center gap-6 pt-4">
+              <div>
                 <p className="text-3xl font-bold text-accent">120+</p>
                 <p className="text-sm text-muted-foreground">Clients Served</p>
               </div>
-              <div className="w-px h-12 bg-border" />
-              <div className="text-center">
+              <div className="w-px h-12 bg-border hidden sm:block" />
+              <div>
                 <p className="text-3xl font-bold text-accent">5+</p>
                 <p className="text-sm text-muted-foreground">Years Experience</p>
               </div>
-              <div className="w-px h-12 bg-border" />
-              <div className="text-center">
+              <div className="w-px h-12 bg-border hidden sm:block" />
+              <div>
                 <p className="text-3xl font-bold text-accent">12+</p>
                 <p className="text-sm text-muted-foreground">Awards Earned</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Service specialties */}
+        <div className="mb-24 rounded-2xl border border-border/60 bg-card p-6 sm:p-8 lg:p-10">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            <div className="fade-up">
+              <p className="font-heading text-2xl lg:text-3xl text-foreground mb-5">
+                Servicing them with
+              </p>
+              <ul className="space-y-2 text-foreground/90 text-base sm:text-lg leading-relaxed">
+                {serviceSpecialties.map((item) => (
+                  <li key={item} className="flex gap-3 items-start">
+                    <span className="text-accent mt-2">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="fade-up">
+              <h3 className="font-heading text-3xl lg:text-5xl font-semibold text-primary text-center lg:text-left mb-5">
+                Trusted by 120+ clients
+              </h3>
+              <div className="rounded-xl overflow-hidden border border-border/60 shadow-sm bg-secondary">
+                <img
+                  src={servicesTrustedPhoto}
+                  alt="Financial planning consultation visual"
+                  className="w-full h-[420px] sm:h-[520px] object-contain object-center bg-black/5 p-2 transition-transform duration-500 hover:scale-[1.02]"
+                />
               </div>
             </div>
           </div>

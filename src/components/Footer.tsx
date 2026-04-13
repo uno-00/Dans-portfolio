@@ -5,9 +5,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
             <p className="font-heading text-lg font-bold text-primary-foreground">
-              Sterling<span className="text-accent">.</span>Finance
+              Danina Roselle Matulac
             </p>
-            <p className="text-xs mt-1">Trusted Financial Advisory Since 2010</p>
+            <p className="text-xs mt-1">Trusted Financial Advisory</p>
           </div>
           <div className="flex gap-6 text-sm">
             <a href="#about" className="hover:text-primary-foreground transition-colors duration-300">About</a>
@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-primary-foreground/10 mt-8 pt-8 text-xs text-center space-y-2">
-          <p>© {new Date().getFullYear()} Sterling Finance. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Danina Roselle Matulac. All rights reserved.</p>
           <p className="max-w-2xl mx-auto text-primary-foreground/50">
             Disclaimer: The information provided on this website is for general informational purposes only and does not constitute financial advice. 
             Past performance is not indicative of future results. Please consult a qualified financial advisor before making any investment decisions.

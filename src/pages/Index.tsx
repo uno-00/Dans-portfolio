@@ -2,6 +2,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import VideoSection from "@/components/VideoSection";
 import ServicesSection from "@/components/ServicesSection";
 import WhySection from "@/components/WhySection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -20,6 +21,7 @@ export default function Index() {
       <Navbar />
       <HeroSection />
       <AboutSection />
+      <VideoSection />
       <ServicesSection />
       <WhySection />
       <TestimonialsSection />
