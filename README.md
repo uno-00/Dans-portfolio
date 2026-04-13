@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Danina Portfolio
 
-TODO: Document your project here
+Personal website for Danina Roselle Matulac, built with Vite + React.
