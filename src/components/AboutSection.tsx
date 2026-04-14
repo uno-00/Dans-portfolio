@@ -1,5 +1,4 @@
 import advisorPhoto from "@/assets/advisor-photo.png";
-import advisorStoryPhoto from "@/assets/advisor-story.png";
 import heroBgPhoto from "@/assets/hero-bg.jpg";
 import servicesTrustedPhoto from "@/assets/services-trusted.png";
 
@@ -37,12 +36,6 @@ const serviceSpecialties = [
 
 const consultantGallery = [
   {
-    src: advisorStoryPhoto,
-    alt: "Danina featured highlight",
-    className: "col-span-2 row-span-2",
-    imageClass: "object-top",
-  },
-  {
     src: advisorPhoto,
     alt: "Danina portrait",
     className: "",
@@ -71,12 +64,6 @@ const consultantGallery = [
     alt: "Client advisory support",
     className: "",
     imageClass: "object-center",
-  },
-  {
-    src: advisorStoryPhoto,
-    alt: "Danina seminar moment",
-    className: "",
-    imageClass: "object-left",
   },
   {
     src: heroBgPhoto,
@@ -172,38 +159,6 @@ export default function AboutSection() {
               <div>
                 <p className="text-3xl font-bold text-accent">12+</p>
                 <p className="text-sm text-muted-foreground">Awards Earned</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Service specialties */}
-        <div className="mb-24 rounded-2xl border border-border/60 bg-card p-6 sm:p-8 lg:p-10">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-            <div className="fade-up">
-              <p className="font-heading text-2xl lg:text-3xl text-foreground mb-5">
-                Servicing them with
-              </p>
-              <ul className="space-y-2 text-foreground/90 text-base sm:text-lg leading-relaxed">
-                {serviceSpecialties.map((item) => (
-                  <li key={item} className="flex gap-3 items-start">
-                    <span className="text-accent mt-2">•</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="fade-up">
-              <h3 className="font-heading text-3xl lg:text-5xl font-semibold text-primary text-center lg:text-left mb-5">
-                Trusted by 120+ clients
-              </h3>
-              <div className="rounded-xl overflow-hidden border border-border/60 shadow-sm bg-secondary">
-                <img
-                  src={servicesTrustedPhoto}
-                  alt="Financial planning consultation visual"
-                  className="w-full h-[420px] sm:h-[520px] object-contain object-center bg-black/5 p-2 transition-transform duration-500 hover:scale-[1.02]"
-                />
               </div>
             </div>
           </div>

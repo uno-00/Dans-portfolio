@@ -1,0 +1,32 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B132B"/>
+      <stop offset="1" stop-color="#1C2541"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="160" y1="110" x2="880" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3A86FF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#00D4FF" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="70" y="70" width="1060" height="490" rx="28" fill="url(#accent)" stroke="#8EC5FF" stroke-opacity="0.28"/>
+
+  <text x="120" y="220" fill="#E6F1FF" font-family="Inter, Arial, sans-serif" font-size="38" letter-spacing="5">
+    FINANCIAL CONSULTANT
+  </text>
+  <text x="120" y="318" fill="#FFFFFF" font-family="Playfair Display, Georgia, serif" font-size="78" font-weight="700">
+    Danina Roselle
+  </text>
+  <text x="120" y="392" fill="#FFFFFF" font-family="Playfair Display, Georgia, serif" font-size="78" font-weight="700">
+    Matulac
+  </text>
+  <text x="120" y="470" fill="#C8D9F0" font-family="Inter, Arial, sans-serif" font-size="32">
+    Personalized wealth planning for Filipino individuals and families
+  </text>
+
+  <circle cx="1010" cy="142" r="10" fill="#80BFFF"/>
+  <circle cx="1044" cy="142" r="10" fill="#80BFFF" fill-opacity="0.7"/>
+  <circle cx="1078" cy="142" r="10" fill="#80BFFF" fill-opacity="0.45"/>
+</svg>
