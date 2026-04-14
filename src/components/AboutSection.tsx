@@ -1,5 +1,4 @@
 import advisorPhoto from "@/assets/advisor-photo.png";
-import heroBgPhoto from "@/assets/hero-bg.jpg";
 import servicesTrustedPhoto from "@/assets/services-trusted.png";
 
 const milestones = [
@@ -17,59 +16,16 @@ const milestones = [
   { year: "Nov 2025", event: "National Achievers Club" },
 ];
 
-const serviceSpecialties = [
-  "Single Professionals Wealth Portfolio",
-  "Business Continuity Plans",
-  "Newly Married MRI House Loan",
-  "Retention program for Employees",
-  "OFW Retirement Plans",
-  "Child's Education Fund and Savings",
-  "Breadwinner Protection System",
-  "Hospitalization Benefits for All",
-  "Financial Seminars for Employees",
-  "Insurance Policy Review",
-  "Investment Builder Plans",
-  "Critical Illness Insurance",
-  "Senior Citizen Insurance",
-  "Estate Planning for Property Owners",
-];
-
 const consultantGallery = [
   {
     src: advisorPhoto,
     alt: "Danina portrait",
-    className: "",
-    imageClass: "object-center",
+    imageClass: "object-contain object-center",
   },
   {
     src: servicesTrustedPhoto,
     alt: "Client planning session",
-    className: "",
-    imageClass: "object-center",
-  },
-  {
-    src: heroBgPhoto,
-    alt: "Financial consultation setup",
-    className: "",
-    imageClass: "object-center",
-  },
-  {
-    src: advisorPhoto,
-    alt: "Danina professional profile",
-    className: "col-span-2 sm:col-span-1",
-    imageClass: "object-top",
-  },
-  {
-    src: servicesTrustedPhoto,
-    alt: "Client advisory support",
-    className: "",
-    imageClass: "object-center",
-  },
-  {
-    src: heroBgPhoto,
-    alt: "Advisor desk visual",
-    className: "sm:col-span-2",
-    imageClass: "object-center",
+    imageClass: "object-contain object-center",
   },
 ];
 
@@ -84,7 +40,8 @@ export default function AboutSection() {
               <img
                 src={advisorPhoto}
                 alt="Financial Advisor"
-                className="block w-full h-[360px] sm:h-[420px] object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+                className="block w-full aspect-[4/5] sm:aspect-auto sm:h-[420px] object-cover object-[50%_35%] sm:object-center transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             {/* Decorative frame */}
@@ -115,16 +72,17 @@ export default function AboutSection() {
 
         {/* Financial consultant story */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-24">
-          <div className="fade-up grid grid-cols-2 sm:grid-cols-3 gap-3 lg:gap-4 auto-rows-[100px] sm:auto-rows-[120px]">
+          <div className="fade-up w-full max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 auto-rows-[220px] sm:auto-rows-[240px]">
             {consultantGallery.map((photo) => (
               <div
                 key={`${photo.alt}-${photo.src}`}
-                className={`${photo.className} rounded-xl overflow-hidden border border-border/60 shadow-sm bg-card`}
+                className="rounded-xl overflow-hidden border border-border/60 shadow-sm bg-card p-2"
               >
                 <img
                   src={photo.src}
                   alt={photo.alt}
-                  className={`w-full h-full object-cover ${photo.imageClass} transition-transform duration-500 hover:scale-[1.03]`}
+                  loading="lazy"
+                  className={`w-full h-full ${photo.imageClass} transition-transform duration-500 hover:scale-[1.02]`}
                 />
               </div>
             ))}
@@ -145,20 +103,20 @@ export default function AboutSection() {
               strengthen their financial foundation, manage risks effectively, and create
               strategies that support both present needs and future aspirations.
             </p>
-            <div className="flex flex-wrap items-center gap-6 pt-4">
-              <div>
-                <p className="text-3xl font-bold text-accent">120+</p>
-                <p className="text-sm text-muted-foreground">Clients Served</p>
-              </div>
-              <div className="w-px h-12 bg-border hidden sm:block" />
-              <div>
-                <p className="text-3xl font-bold text-accent">5+</p>
-                <p className="text-sm text-muted-foreground">Years Experience</p>
-              </div>
-              <div className="w-px h-12 bg-border hidden sm:block" />
-              <div>
-                <p className="text-3xl font-bold text-accent">12+</p>
-                <p className="text-sm text-muted-foreground">Awards Earned</p>
+            <div className="pt-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+                <div className="rounded-lg border border-border/60 bg-card px-4 py-3 text-center sm:text-left">
+                  <p className="text-3xl font-bold text-accent">120+</p>
+                  <p className="text-sm text-muted-foreground">Clients Served</p>
+                </div>
+                <div className="rounded-lg border border-border/60 bg-card px-4 py-3 text-center sm:text-left">
+                  <p className="text-3xl font-bold text-accent">5+</p>
+                  <p className="text-sm text-muted-foreground">Years Experience</p>
+                </div>
+                <div className="rounded-lg border border-border/60 bg-card px-4 py-3 text-center sm:text-left">
+                  <p className="text-3xl font-bold text-accent">12+</p>
+                  <p className="text-sm text-muted-foreground">Awards Earned</p>
+                </div>
               </div>
             </div>
           </div>

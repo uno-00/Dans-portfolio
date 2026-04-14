@@ -10,7 +10,8 @@ export default function HeroSection() {
           alt="Financial advisor office"
           width={1920}
           height={1080}
-          className="w-full h-full object-cover object-[50%_55%]"
+          fetchPriority="high"
+          className="w-full h-full object-cover object-[58%_55%] sm:object-[50%_55%]"
         />
         <div className="absolute inset-0 bg-navy-dark/65" />
       </div>
